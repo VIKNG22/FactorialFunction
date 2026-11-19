@@ -1,16 +1,18 @@
-let numero = 10 ;
-let contador = numero - 1 ;
-let acumulador = 1;
-let final = 0;
+let numero = 5
 
 function fatorial (numero) {
+    let contador = numero - 1;
+    let acumulador = 1;
+
     for (; contador > 0 ; contador--) {
         acumulador *= numero ;
         numero-- ;
-        final = acumulador
     }
-    return final
+    return acumulador;
 }
 
 let resposta = fatorial(numero);
-console.log(resposta)
+console.log(fatorial(5));
+console.log(fatorial(3));
+console.log(fatorial(1));
+console.log(fatorial(0));
